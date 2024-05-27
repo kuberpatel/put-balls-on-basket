@@ -1,34 +1,30 @@
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
+button {
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  font-family: monospace;
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 
-#basket {
-  height: 150px;
-  width: 500px;
-  padding-left: 10px;
-  padding-top: 5px;
-  border: 1px solid black;
-  /* Uses flexbox layout for child elements (balls) */
+button:hover {
+  box-shadow: 0px 0px 30px 2px grey;
+}
+
+#box {
+  border: 5px double lightgrey;
+  border-top: none;
+  margin-top: 50px;
   display: flex;
-  /* Allows flex items (balls) to wrap onto multiple lines.*/
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  min-height: 100px;
+  background-color: azure;
 }
 
 .ball {
-  height: 50px;
-  width: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  /* Add margin around each ball */
-  margin: 5px;
-}
-
-#start {
-  height: 30px;
-  width: 60px;
-  margin: 10px;
 }
