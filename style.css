@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#basket {
+  height: 150px;
+  width: 500px;
+  padding-left: 10px;
+  padding-top: 5px;
+  border: 1px solid black;
+  /* Uses flexbox layout for child elements (balls) */
+  display: flex;
+  /* Allows flex items (balls) to wrap onto multiple lines.*/
+  flex-wrap: wrap;
+}
+
+.ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* Add margin around each ball */
+  margin: 5px;
+}
+
+#start {
+  height: 30px;
+  width: 60px;
+  margin: 10px;
+}
